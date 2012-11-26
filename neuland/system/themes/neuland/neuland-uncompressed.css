@@ -1,0 +1,293 @@
+#header,
+#header h1,
+#left,
+#tl_navigation h1 {
+	background: none;
+	box-shadow: none;
+	border: none;
+	border-radius: 0;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+	background: #272727;
+}
+
+#header {
+	background: #202020;
+	position: fixed;
+	width: 100%;
+	height: 45px;
+	margin: 0;
+	left: 0;
+	top: 0;
+	z-index: 200;
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.8);
+	padding-right: 10px;
+}
+
+#header div {
+	padding: 2px;
+}
+
+#header h1 {
+	float: left;
+	padding-top: 16px;
+}
+
+#header h1 a {
+	font-size: 12px;
+	color: #fff;
+}
+
+#header .styled_select {
+	padding-left: 4px;
+	text-align: left;
+}
+
+#container {
+	margin-top: 60px;
+	margin-left: 300px;
+	margin-right: 20px;
+	padding: 25px;
+	background: white;
+	min-width: 801px;
+	width: auto;
+	border-radius: 10px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
+}
+
+.popup #container {
+	min-width: auto;
+	border-radius: 0;
+	box-shadow: none; 
+}
+
+#main {
+	float: none;
+	margin: 0 auto;
+	width: auto;
+	box-shadow: none; 
+}
+
+h1.main_headline {
+	padding: 7px 8px 8px;
+	background: #666;
+}
+
+#left {
+	position: fixed;
+	left: 0;
+	top: 54px;
+	width: 280px;
+	background: #272727;
+	border: none;
+	border-radius: 0;
+}
+
+#footer {
+	width: auto;
+	margin: 0 20px 20px 0;
+}
+
+#tl_top_panel {
+	background: none;
+	position: fixed;
+	top: 7px;
+	right: 198px;
+	z-index: 300;
+	border: 0;
+	background: #202020;
+	width: auto;
+}
+
+#tl_top_panel .tl_select {
+	margin: 1px 2px;
+}
+
+#tl_top_panel strong {
+	margin: 0 8px;
+}
+
+#tl_top_panel .tl_subpanel {
+	float: right;
+}
+
+#tl_top_panel .tl_formbody {
+	display: none;
+}
+
+#tl_top_panel .beFieldsetFilter .clear {
+	right: 3px;
+	top: 9px;
+}
+
+.tl_search .tl_text, .beFieldsetFilter.tl_panel .search {
+	width: 150px;
+}
+
+.tl_listing, .tl_header, .tl_content {
+	width: auto;
+}
+
+table.tl_listing {
+	width: 100%;
+}
+
+.neuland_submit {
+	background: #8AB858;
+	padding: 4px 3px 0px 3px;
+	border-radius: 3px;
+	margin-top: 2px;
+	margin-left: 10px;
+	outline: none;
+	border: none;
+}
+
+.tl_subpanel .styled_select {
+	padding: 2px 2px 2px 6px;
+}
+
+#tl_navigation a {
+	color: #ccc;
+}
+
+#tl_navigation .tl_level_2 a {
+	line-height: 1;
+}
+
+#tl_navigation a:hover {
+	color: #333;
+}
+
+#tl_navigation {
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.8);
+}
+
+.tl_level_2 {
+	background-color: #333;
+}
+
+.tl_level_1_group a{
+	background: #202020;
+}
+
+#tl_navigation,
+.tl_level_1_group:first-child,
+.tl_level_1_group:first-child a{
+	border-top-right-radius: 10px;
+}
+
+#tl_navigation,
+.tl_level_1 > li:last-child,
+.tl_level_1 > li:last-child ul,
+.tl_level_1 > li:last-child a{
+	border-bottom-right-radius: 10px;
+}
+
+#left #tl_navigation a {
+	padding: 6px 6px !important;
+}
+
+
+.tl_listing li > .tl_right a, 
+.tl_listing li > .tl_right > img, 
+.tl_listing td.tl_right_nowrap a, 
+.tl_content_header a, 
+.tl_content_right a, 
+.tl_content a {
+	display: inline-block;
+}
+
+/* styling dropdown menu */
+.btn-group {
+	float: right;
+}
+.btn-group button {
+	margin-right: 20px;
+	margin-left: -10px;
+}
+
+.dropdown-menu {
+	position: fixed;
+	display: none;
+	border: 1px solid #202020;
+	background:  #8AB858;
+	padding: 0 8px;
+	margin-top: -1px;
+	margin-left: 0px;
+	border-radius: 3px;
+	z-index: 350;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+	top: 0;
+	left: 0;
+}
+
+.dropdown-menu .group {
+	font-weight: bold;
+}
+
+.dropdown-toggle {
+	position: relative;
+	border-radius: 3px;
+	background: #8AB858;
+	border: 0;
+	padding: 3px 8px 3px 11px;
+	margin-top: 11px;
+	outline: none;
+	height: 22px;
+}
+
+.dropdown-toggle.disabled {
+	background: #333633;
+	
+}
+
+.dropdown-menu a {
+	padding: 7px 3px 7px 27px;
+	border-bottom: 1px solid #202020;
+	color: #202020;
+	display: block;
+	margin-left: 0px;
+}
+
+.dropdown-menu a:hover{
+	color: #fff;
+}
+
+.dropdown-menu li:last-child a{
+	border: none;
+}
+
+.open .dropdown-menu {
+	display: block;
+}
+
+.open .dropdown-toggle, .open .dropdown-toggle span {
+	color: white;
+	border-top-color: #fff;
+}
+
+.caret {
+  margin: 7px 3px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: top;
+  border-top: 4px solid #000000;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+}
+
+.dropdown .caret {
+  margin-top: 8px;
+  margin-left: 2px;
+}
+
+.tl_textarea {
+	width: 100%;
+}
