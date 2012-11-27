@@ -56,28 +56,29 @@ class BackendUser extends Contao\BackendUser
 	 */
 	protected function lazyLoadNeulandTheme()
 	{
-		// we have to check if extension is be deinstalled...
-		if(\Input::get('do') == 'repository_manager' && \Input::get('uninstall') == 'neuland' && \Input::post('repository_submitbutton') != null)
-		{
-			// let's reset the backend theme
-			$this->backendTheme = 'default';
-			return;			
-		}
-	
-		TemplateLoader::addFiles(array
-		(
-			'be_main'       => 'system/modules/neuland/templates',
-			'be_login'       => 'system/modules/neuland/templates',
-		));
-		
-		// we also set theme back to default because we only extend the main theme
-		// paths to neuland files are hard coded in the template
-		$GLOBALS['TL_CONFIG']['backendTheme'] = 'default';
-		$GLOBALS['TL_CONFIG']['useNeulandTheme'] = true;
-		
-		// require usage of Font Awesome
-		$GLOBALS['TL_CONFIG']['requireFontAwesome'] = true;
-		$GLOBALS['TL_CONFIG']['requireImprovedTheme'] = true;
+			// we have to check if extension is be deinstalled...
+			if(\Input::get('do') == 'repository_manager' && \Input::get('uninstall') == 'neuland')
+			{				
+				// let's reset the backend theme
+				$GLOBALS['TL_CONFIG']['backendTheme'] = 'default';
+				return;			
+			}
+			
+			
+			TemplateLoader::addFiles(array
+			(
+				'be_main'       => 'system/modules/neuland/templates',
+				'be_login'       => 'system/modules/neuland/templates',
+			));
+			
+			// we also set theme back to default because we only extend the main theme
+			// paths to neuland files are hard coded in the template
+			$GLOBALS['TL_CONFIG']['backendTheme'] = 'default';
+			$GLOBALS['TL_CONFIG']['useNeulandTheme'] = true;
+			
+			// require usage of Font Awesome
+			$GLOBALS['TL_CONFIG']['requireFontAwesome'] = true;
+			$GLOBALS['TL_CONFIG']['requireImprovedTheme'] = true;
 	}
 
 }
