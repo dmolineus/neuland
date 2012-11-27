@@ -60,7 +60,7 @@ class BackendUser extends Contao\BackendUser
 		if(\Input::get('do') == 'repository_manager' && \Input::get('uninstall') == 'neuland' && \Input::post('repository_submitbutton') != null)
 		{
 			// let's reset the backend theme
-			$this->User->backendTheme = 'default';
+			$this->backendTheme = 'default';
 			return;			
 		}
 	
