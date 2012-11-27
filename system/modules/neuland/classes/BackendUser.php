@@ -69,6 +69,7 @@ class BackendUser extends Contao\BackendUser
 			
 			// require usage of Font Awesome
 			$GLOBALS['TL_CONFIG']['requireFontAwesome'] = true;
+			$GLOBALS['TL_CONFIG']['requireImprovedTheme'] = true;
 	}
 
 }
