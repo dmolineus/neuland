@@ -125,7 +125,7 @@ h1.main_headline {
 	top: 9px;
 }
 
-.tl_search .tl_text, .beFieldsetFilter.tl_panel .search {
+.tl_search .tl_text, #tl_top_panel .beFieldsetFilter.tl_search .search {
 	width: 150px;
 }
 
